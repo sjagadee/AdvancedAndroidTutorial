@@ -18,6 +18,6 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.second_activity);
 
-        Log.d(TAG, "onCreate: In Second Activity");
+        Log.d(TAG, "onCreate: Started.");
     }
 }
