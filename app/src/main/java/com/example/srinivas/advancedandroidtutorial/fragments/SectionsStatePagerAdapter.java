@@ -1,4 +1,4 @@
-package com.example.srinivas.advancedandroidtutorial;
+package com.example.srinivas.advancedandroidtutorial.fragments;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

@@ -9,6 +9,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.example.srinivas.advancedandroidtutorial.fragments.MyFragmentActivity;
+
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 

@@ -1,4 +1,4 @@
-package com.example.srinivas.advancedandroidtutorial;
+package com.example.srinivas.advancedandroidtutorial.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,13 +10,15 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.srinivas.advancedandroidtutorial.R;
+
 /**
  * Created by srinivas on 5/31/17.
  */
 
-public class Fragment2 extends Fragment {
+public class Fragment1 extends Fragment {
 
-    private static final String TAG = "Fragment2";
+    private static final String TAG = "Fragment1";
 
     private Button btnNavFrag1;
     private Button btnNavFrag2;
@@ -26,7 +28,7 @@ public class Fragment2 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment2_layout, container, false);
+        View view = inflater.inflate(R.layout.fragment1_layout, container, false);
 
         btnNavFrag1 = (Button) view.findViewById(R.id.bGoToFragment1);
         btnNavFrag2 = (Button) view.findViewById(R.id.bGoToFragment2);

@@ -1,10 +1,12 @@
-package com.example.srinivas.advancedandroidtutorial;
+package com.example.srinivas.advancedandroidtutorial.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+
+import com.example.srinivas.advancedandroidtutorial.R;
 
 /**
  * Created by srinivas on 5/31/17.
