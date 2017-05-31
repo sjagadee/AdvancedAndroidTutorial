@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:text="Go To Fragment3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bGoToFragment3"
+        android:layout_below="@+id/bGoToFragment2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Go To Fragment1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bGoToFragment1"
+        android:layout_below="@+id/tvTitle"
+        android:layout_alignLeft="@+id/bGoToFragment2"
+        android:layout_alignStart="@+id/bGoToFragment2"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:text="Go To Fragment2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bGoToFragment2"
+        android:layout_below="@+id/bGoToFragment1"
+        android:layout_alignLeft="@+id/bGoToFragment3"
+        android:layout_alignStart="@+id/bGoToFragment3" />
+
+    <TextView
+        android:text="Welcome to Fragment1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:id="@+id/tvTitle"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Go To Second Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bGoToSecondActivity"
+        android:layout_below="@+id/bGoToFragment3"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
