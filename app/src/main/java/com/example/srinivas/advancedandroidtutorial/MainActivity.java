@@ -34,8 +34,12 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, "onItemClick: the " + position + " for fragment");
                 switch (position) {
                     case 0:
-                        Intent i = new Intent(getApplicationContext(), MyFragmentActivity.class);
-                        startActivity(i);
+                        Intent intent = new Intent(getApplicationContext(), MyFragmentActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 1:
+                        Intent intentToActionBar  =  new Intent(getApplicationContext(), MyActionBarActivity.class);
+                        startActivity(intentToActionBar);
                         break;
                 }
             }
