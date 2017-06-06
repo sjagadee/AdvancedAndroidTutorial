@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ic_android"
+        android:icon="@drawable/ic_android"
+        android:title="Android" />
+
+    <item
+        android:id="@+id/ic_assessment"
+        android:icon="@drawable/ic_assessment"
+        android:title="Assessment" />
+
+    <item
+        android:id="@+id/ic_cloud"
+        android:icon="@drawable/ic_filter_drama"
+        android:title="Cloud" />
+
+    <item
+        android:id="@+id/ic_group"
+        android:icon="@drawable/ic_group"
+        android:title="Group" />
+
+    <item
+        android:id="@+id/ic_smilee_face"
+        android:icon="@drawable/ic_tag_faces"
+        android:title="Smilee" />
+
+</menu>

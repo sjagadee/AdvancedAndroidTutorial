@@ -1,81 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_my_action_bar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.srinivas.advancedandroidtutorial.MyActionBarActivity">
+    tools:context="com.example.srinivas.advancedandroidtutorial.action_bar.MyActionBarActivity">
 
-    <android.support.design.widget.AppBarLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:id="@+id/relLayoutParent">
 
-        <android.support.v7.widget.Toolbar
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/toolbarTop"
-            android:background="@drawable/white_gray_border_bottom">
+            android:layout_height="55dp"
+            android:id="@+id/RelLayoutTopBar"
+            android:layout_alignParentTop="true">
 
-        </android.support.v7.widget.Toolbar>
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-    </android.support.design.widget.AppBarLayout>
+                <android.support.design.widget.TabLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tabs"
+                    android:background="@drawable/white_gray_border_bottom">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom">
+                </android.support.design.widget.TabLayout>
 
-        <android.support.v7.widget.Toolbar
+            </android.support.design.widget.AppBarLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/toolbarBottom"
-            android:background="@drawable/white_gray_border_top">
+            android:layout_height="match_parent"
+            android:id="@+id/RelLayoutMiddle"
+            android:layout_below="@+id/RelLayoutTopBar"
+            android:layout_above="@+id/RelLayoutBottomBar">
 
-            <LinearLayout
+            <android.support.v4.view.ViewPager
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:weightSum="100"
-                android:orientation="horizontal">
+                android:id="@+id/containerPager">
 
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="20"
-                    android:src="@drawable/ic_android"
-                    android:contentDescription="Android"/>
 
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="20"
-                    android:src="@drawable/ic_assessment"
-                    android:contentDescription="Charts"/>
+            </android.support.v4.view.ViewPager>
 
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="20"
-                    android:src="@drawable/ic_filter_drama"
-                    android:contentDescription="Cloud"/>
 
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="20"
-                    android:src="@drawable/ic_group"
-                    android:contentDescription="People"/>
+        </RelativeLayout>
 
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="20"
-                    android:src="@drawable/ic_tag_faces"
-                    android:contentDescription="Smilee Face"/>
 
-            </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/RelLayoutBottomBar"
+            android:layout_alignParentBottom="true">
 
-        </android.support.v7.widget.Toolbar>
+            <android.support.design.widget.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bottomNavView_Bar"
+                android:background="@drawable/white_gray_border_top"
+                app:menu="@menu/bottom_navigation_menu">
 
-    </android.support.design.widget.AppBarLayout>
+            </android.support.design.widget.BottomNavigationView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
 
 </android.support.design.widget.CoordinatorLayout>
