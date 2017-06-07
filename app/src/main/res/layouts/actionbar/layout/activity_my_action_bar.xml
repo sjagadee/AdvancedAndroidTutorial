@@ -34,7 +34,6 @@
 
         </RelativeLayout>
 
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -46,10 +45,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/containerPager">
-
-
             </android.support.v4.view.ViewPager>
-
 
         </RelativeLayout>
 
@@ -60,13 +56,13 @@
             android:id="@+id/RelLayoutBottomBar"
             android:layout_alignParentBottom="true">
 
+            <!-- Bottom Navigation View uses Menu to create multiple menu items -->
             <android.support.design.widget.BottomNavigationView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/bottomNavView_Bar"
                 android:background="@drawable/white_gray_border_top"
                 app:menu="@menu/bottom_navigation_menu">
-
             </android.support.design.widget.BottomNavigationView>
 
         </RelativeLayout>

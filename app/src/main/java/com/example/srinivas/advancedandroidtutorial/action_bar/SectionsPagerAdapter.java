@@ -9,6 +9,11 @@ import java.util.List;
 
 /**
  * Created by srinivas on 6/6/17.
+ *
+ * This adapter class is extended from FragmentPagerAdapter, which would have two default methods
+ * getItem() and getCount()
+ *
+ * We need to implement addFragment() by passing an instance of the fragment
  */
 
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
