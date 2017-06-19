@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Fragment Communication"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_margin="10dp"/>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:id="@+id/fragEnterName"
+        android:layout_marginTop="20dp"
+        android:name="com.example.srinivas.advancedandroidtutorial.fragment_to_fragment.EnterNameFragment"/>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:id="@+id/fragDisplayName"
+        android:layout_marginTop="20dp"
+        android:name="com.example.srinivas.advancedandroidtutorial.fragment_to_fragment.DisplayNameFragment" />
+
+</LinearLayout>

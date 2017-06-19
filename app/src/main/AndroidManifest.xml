@@ -24,6 +24,7 @@
         <activity android:name=".action_bar.ActivityFour" />
         <activity android:name=".fragment_example.FragmentActivity" />
         <activity android:name=".fragment_to_activity.FragToActivityCommunicationActivity" />
+        <activity android:name=".fragment_to_fragment.FragToFragCommunicationActivity" />
 
     </application>
 
