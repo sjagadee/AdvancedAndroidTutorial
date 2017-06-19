@@ -23,6 +23,8 @@
         <activity android:name=".action_bar.ActivityThree" />
         <activity android:name=".action_bar.ActivityFour" />
         <activity android:name=".fragment_example.FragmentActivity" />
+        <activity android:name=".fragment_to_activity.FragToActivityCommunicationActivity" />
+
     </application>
 
 </manifest>
