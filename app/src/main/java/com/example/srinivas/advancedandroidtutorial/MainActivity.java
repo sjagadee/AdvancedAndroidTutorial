@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.example.srinivas.advancedandroidtutorial.action_bar.MyActionBarActivity;
+import com.example.srinivas.advancedandroidtutorial.fragment_example.FragmentActivity;
 import com.example.srinivas.advancedandroidtutorial.fragments.MyFragmentActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ListView lvTopList;
 
-    String[] listOfString = {"Fragments", "Action Bar" };
+    String[] listOfString = {"Fragment - view pager", "Action Bar", "Fragment - fm" };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +40,10 @@ public class MainActivity extends AppCompatActivity {
                     case 1:
                         Intent intentToActionBar  =  new Intent(getApplicationContext(), MyActionBarActivity.class);
                         startActivity(intentToActionBar);
+                        break;
+                    case 2:
+                        Intent intentToFrag  =  new Intent(getApplicationContext(), FragmentActivity.class);
+                        startActivity(intentToFrag);
                         break;
                 }
             }

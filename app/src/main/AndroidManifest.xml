@@ -21,7 +21,8 @@
         <activity android:name=".action_bar.ActivityOne" />
         <activity android:name=".action_bar.ActivityTwo" />
         <activity android:name=".action_bar.ActivityThree" />
-        <activity android:name=".action_bar.ActivityFour"></activity>
+        <activity android:name=".action_bar.ActivityFour" />
+        <activity android:name=".fragment_example.FragmentActivity" />
     </application>
 
 </manifest>
