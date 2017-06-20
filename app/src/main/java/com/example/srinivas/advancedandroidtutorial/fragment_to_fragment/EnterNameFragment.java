@@ -32,14 +32,13 @@ public class EnterNameFragment extends Fragment {
         etEnterName = (EditText) view.findViewById(R.id.etEnterName);
         bSendName = (Button) view.findViewById(R.id.bSendName);
 
-            bSendName.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    String name = etEnterName.getText().toString();
-                    onSendNameClickListener.onSendName(name);
-                }
-            });
-
+        bSendName.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String name = etEnterName.getText().toString();
+                onSendNameClickListener.onSendName(name);
+            }
+        });
 
         return view;
     }

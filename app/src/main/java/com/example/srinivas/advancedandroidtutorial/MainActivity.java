@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.example.srinivas.advancedandroidtutorial.action_bar.MyActionBarActivity;
+import com.example.srinivas.advancedandroidtutorial.frag_to_frag_bundle.FragmentToFragmentBundleActivity;
 import com.example.srinivas.advancedandroidtutorial.fragment_example.FragmentActivity;
 import com.example.srinivas.advancedandroidtutorial.fragment_to_activity.FragToActivityCommunicationActivity;
 import com.example.srinivas.advancedandroidtutorial.fragment_to_fragment.FragToFragCommunicationActivity;
@@ -19,7 +20,8 @@ public class MainActivity extends AppCompatActivity {
 
     private ListView lvTopList;
 
-    String[] listOfString = {"Fragment - view pager", "Action Bar", "Fragment - fm", "Fragment - Activity (communication)", "Fragment - Fragment (Communication)" };
+    String[] listOfString = {"Fragment - view pager", "Action Bar", "Fragment - fm", "Fragment - Activity (communication)", "Fragment - Fragment (Communication)",
+            "Fragment - Fragment (Bundle)"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,11 +42,11 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                         break;
                     case 1:
-                        Intent intentToActionBar  =  new Intent(getApplicationContext(), MyActionBarActivity.class);
+                        Intent intentToActionBar = new Intent(getApplicationContext(), MyActionBarActivity.class);
                         startActivity(intentToActionBar);
                         break;
                     case 2:
-                        Intent intentToFrag  =  new Intent(getApplicationContext(), FragmentActivity.class);
+                        Intent intentToFrag = new Intent(getApplicationContext(), FragmentActivity.class);
                         startActivity(intentToFrag);
                         break;
                     case 3:
@@ -54,6 +56,10 @@ public class MainActivity extends AppCompatActivity {
                     case 4:
                         Intent intentFragToFragComm = new Intent(getApplicationContext(), FragToFragCommunicationActivity.class);
                         startActivity(intentFragToFragComm);
+                        break;
+                    case 5:
+                        Intent intentFragToFragBundle = new Intent(getApplicationContext(), FragmentToFragmentBundleActivity.class);
+                        startActivity(intentFragToFragBundle);
                         break;
                 }
             }
