@@ -6,10 +6,11 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.Toast;
+import android.widget.ListView;
 
 import com.example.srinivas.advancedandroidtutorial.R;
+
+import java.util.ArrayList;
 
 /**
  * Created by srinivas on 6/6/17.
@@ -18,21 +19,31 @@ import com.example.srinivas.advancedandroidtutorial.R;
 public class Tab2Fragment extends Fragment {
     private static final String TAG = "Tab2Fragment";
 
-    private Button btnTest;
+    private ListView lvCardOfNature;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_layout2, container, false);
+        lvCardOfNature = (ListView) view.findViewById(R.id.lvCardOfNature);
 
-        btnTest = (Button) view.findViewById(R.id.btnTest);
+        ArrayList<Card> arrayList = new ArrayList<>();
 
-        btnTest.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getActivity(), "Testing the Button 2 Click", Toast.LENGTH_SHORT).show();
-            }
-        });
+        arrayList.add(new Card("drawable://" + R.drawable.albarta, "Alberta"));
+        arrayList.add(new Card("drawable://" + R.drawable.angels_landings, "Angels Landings"));
+        arrayList.add(new Card("drawable://" + R.drawable.australian_mountain, "Australian Mountains"));
+        arrayList.add(new Card("drawable://" + R.drawable.charlottesville, "Charlotteville"));
+        arrayList.add(new Card("drawable://" + R.drawable.combodia, "Combodia"));
+        arrayList.add(new Card("drawable://" + R.drawable.elk_mountains, "Elk Mountains"));
+        arrayList.add(new Card("drawable://" + R.drawable.jiuzhaigou, "Jiuzhaigou"));
+        arrayList.add(new Card("drawable://" + R.drawable.lake_michigan, "Lake Michigan"));
+        arrayList.add(new Card("drawable://" + R.drawable.oregon_coast, "Oregon Coast"));
+        arrayList.add(new Card("drawable://" + R.drawable.rocky_mountains, "Rocky Mountains"));
+        arrayList.add(new Card("drawable://" + R.drawable.skilak_lake, "Skilak Lake"));
+        arrayList.add(new Card("drawable://" + R.drawable.yosamite_falls, "Yosemite Falls"));
+
+        CustomListAdapter listAdapter = new CustomListAdapter(getActivity(), R.layout.card_layout_main, arrayList);
+        lvCardOfNature.setAdapter(listAdapter);
 
         return view;
     }
