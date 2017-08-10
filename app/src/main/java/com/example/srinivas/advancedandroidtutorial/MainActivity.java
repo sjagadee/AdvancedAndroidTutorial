@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private ListView lvTopList;
 
     String[] listOfString = {"Fragment - view pager", "Action Bar", "Fragment - fm", "Fragment - Activity (communication)", "Fragment - Fragment (Communication)",
-            "Fragment - Fragment (Bundle)"};
+            "Fragment - Fragment (Bundle)", "File Reader/ Writer"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

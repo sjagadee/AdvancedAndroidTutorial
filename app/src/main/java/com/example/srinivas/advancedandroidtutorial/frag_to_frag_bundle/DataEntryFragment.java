@@ -48,9 +48,6 @@ public class DataEntryFragment extends Fragment {
                 fragmentTransaction.replace(R.id.flContainer, dataDisplayFragment);
                 fragmentTransaction.commit();
 
-
-
-
             }
         });
 
