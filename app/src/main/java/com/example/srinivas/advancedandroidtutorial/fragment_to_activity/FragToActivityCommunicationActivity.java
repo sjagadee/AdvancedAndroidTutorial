@@ -24,7 +24,7 @@ public class FragToActivityCommunicationActivity extends AppCompatActivity imple
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         ColorChangeFrag colorChangeFrag = new ColorChangeFrag();
-        fragmentTransaction.add(R.id.frag_to_active_containter, colorChangeFrag);
+        fragmentTransaction.add(R.id.frag_to_active_container, colorChangeFrag);
         fragmentTransaction.commit();
     }
 

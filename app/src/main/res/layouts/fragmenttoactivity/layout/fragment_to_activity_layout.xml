@@ -16,7 +16,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:id="@+id/frag_to_active_containter"
+        android:id="@+id/frag_to_active_container"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="30dp">
